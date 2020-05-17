@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Tangerine.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/PressStart.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/IndieFlower.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  .title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10vw;
+    color: black;
+  }
+  
+  .fancy {
+    font-family: 'Tangerine', serif;
+    font-size: 9vw;
+    color: black;
+  }
+  
+  .texty {
+    margin-top: 5px;
+    font-family: 'Indie Flower', serif;
+    font-size: 7vw;
+    color: black;
+  }
+  
+  .small {
+    margin-top: 10px !important;
+    font-size: 5vw !important;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .agent {
+    width: 3vw;
+    height: 3vw;
+  }
+  
+  .agents {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .redagent {
+    fill: #E84F36;
+  }
+  
+  .blueagent {
+    fill: #7088E1;
+  }
+  
+  .selection_box {
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  
+  .box_half {
+      width: 45%;
+  }
+  
+  .box_third {
+      width: 30%;
+  }
+  
+  .selected {
+    padding: 4px !important;
+    border: 4px dashed black;
+  }
+  
+  .option_box {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .red { background-color: #E84F36; }
+  .blue { background-color: #7088E1; }
+  .white { background-color: #F1E8AC; }
+  .tan { background-color: #CCAB35; }
+  .black { background-color: #4E4B4B; }
+  .gray { background-color: lightgray; }
+  #red_players { background-color: #E84F36; }
+  #neutral_players { background-color: #F1E8AC; }
+  #blue_players { background-color: #7088E1; }
+  
+  .invis {
+    color: transparent;
+  }
+  
+  .top_text {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .players {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .player {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .player_name {
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Indie Flower', serif;
+    font-size: 3.6vw;
+  }
+  
+  .player_role {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vw;
+  }
+  
+  #players {
+    width: 100%;
+    display: flex;
+  }
+  
+  #numwords {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  #banner {
+    position: fixed;
+    top: 600;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 70px 0px;
+    text-align: center;
+  }
+  
+  #banner_text {
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8vw;
+  }
+  
+  #banner_reason {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4vw;
+  }
+  
+  #header {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  #table_container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #pass-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  #start, #pass, #guess {
+    margin-top: 20px;
+    padding: 6px;
+    border: 2px solid black;
+  }
+  
+  #bar {
+    width: 80%;
+    height: 6vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Indie Flower', serif;
+    font-size: 5vw;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  #turn_text {
+    padding: 10px 0px;
+  }
+  
+  #turn {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Indie Flower', serif;
+    font-size: 5vw;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  #name {
+    font-family: 'Indie Flower', serif;
+    font-size: 4vw;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1E8AC;
+    border: none;
+  }
+  
+  #number {
+    font-family: 'Indie Flower', serif;
+    font-size: 4vw;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1E8AC;
+    border: none;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  td {
+    width: 20%;
+    padding: 0.3vw;
+  }
+  
+  div .box {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  
+  td .content {
+    font-family: 'Indie Flower', serif;
+    font-size: 3.1vw;
+    height: 6.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 5px;
+    transition: background 1s, color 5s;
+  }
